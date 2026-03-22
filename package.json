@@ -1,0 +1,31 @@
+{
+  "name": "hostpilot-backend",
+  "version": "1.0.0",
+  "description": "HostPilot Channel Manager — Backend API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "migrate": "node supabase/migrate.js",
+    "test": "node src/utils/test-connections.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "ical": "^0.8.0",
+    "ical-generator": "^6.0.1",
+    "joi": "^17.11.0",
+    "node-cron": "^3.0.3",
+    "stripe": "^14.10.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
